@@ -1,7 +1,16 @@
 function calculateStudentGrade(score) {
-  // Start coding here
+  if (score < 50) {
+    return 'F';
+  } else if (score < 69) {
+    return 'D';
+  } else if (score < 79) {
+    return 'C';
+  } else if (score < 89) {  
+    return `b`;
+  } else {
+    return 'A';
+  }
 }
-
 // Example case
 let johnGrade = calculateStudentGrade(30);
 let lisaGrade = calculateStudentGrade(73);
